@@ -13,7 +13,7 @@
   [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
   [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-  [Features](#features) • [Tech Stack](#tech-stack) • [Installation](#installation) • [Security](#security)
+  [Features](#features) • [Tech Stack](#tech-stack) • [Security](#security)
 
 </div>
 
@@ -69,36 +69,6 @@ We take security seriously. Nexus Tools recently underwent a comprehensive secur
 | **AI** | Google Gemini 2.0 | Next-gen multimodal AI model via Vertex AI. |
 | **Infrastructure** | Firebase Functions | Serverless backend for secure API proxying. |
 
----
-
-## <img src="https://unpkg.com/lucide-static@0.344.0/icons/terminal.svg" width="24" height="24" style="vertical-align: middle; margin-right: 8px; filter: invert(1);" /> Installation
-
-1.  **Clone the repository**
-    ```bash
-    git clone https://github.com/your-username/nexus-tools.git
-    cd nexus-tools
-    ```
-
-2.  **Install dependencies**
-    ```bash
-    npm install
-    # Function dependencies
-    cd functions && npm install && cd ..
-    ```
-
-3.  **Environment Setup**
-    Create `src/firebase-config.js` (or `.env` equivalents) with your Firebase credentials.
-    > **Note:** The Gemini API Key is set securely in Firebase Functions secrets, not in the frontend.
-
-4.  **Run Locally**
-    ```bash
-    npm run dev
-    ```
-
-5.  **Scan for Security Issues**
-    ```bash
-    npm run scan:build
-    ```
 
 ---
 
