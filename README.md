@@ -19,35 +19,35 @@
 
 <br />
 
-## ✨ The "Dark Veil" Experience
+## <img src="https://unpkg.com/lucide-static@0.344.0/icons/sparkles.svg" width="24" height="24" style="vertical-align: middle; margin-right: 8px;" /> The "Dark Veil" Experience
 
 Nexus Tools isn't just a list; it's a premium experience. Designed with the **"Dark Veil"** aesthetic, it features deep, immersive backgrounds, glassmorphism, and electric border gradients that bring your tools to life.
 
 ---
 
-## 🚀 Features
+## <img src="https://unpkg.com/lucide-static@0.344.0/icons/rocket.svg" width="24" height="24" style="vertical-align: middle; margin-right: 8px;" /> Features
 
-### 🛠 **Smart Tool Management**
+### <img src="https://unpkg.com/lucide-static@0.344.0/icons/wrench.svg" width="20" height="20" style="vertical-align: middle; margin-right: 6px;" /> **Smart Tool Management**
 Organize your developer arsenal with custom categories like **AI**, **Dev**, **Design**, and **Workflow**. Pin your favorites and track subscription costs effortlessly.
 
-### 🤖 **AI Auto-Fill (Gemini 2.0)**
+### <img src="https://unpkg.com/lucide-static@0.344.0/icons/bot.svg" width="20" height="20" style="vertical-align: middle; margin-right: 6px;" /> **AI Auto-Fill (Gemini 2.0)**
 Powered by **Google Gemini 2.0 Flash**. Simply paste a link, and our AI agent will:
 - Identify the tool and version.
 - auto-select the best category.
 - writes a concise, pro-tip description.
 
-### 🔗 **Shareable Stacks**
+### <img src="https://unpkg.com/lucide-static@0.344.0/icons/share-2.svg" width="20" height="20" style="vertical-align: middle; margin-right: 6px;" /> **Shareable Stacks**
 Create a **read-only snapshot** of your stack to share with the world. 
 - Select specific tools to include.
 - Generate a unique, public link.
 - Keep your private notes private.
 
-### ⚡ **Lightning Performance**
+### <img src="https://unpkg.com/lucide-static@0.344.0/icons/zap.svg" width="20" height="20" style="vertical-align: middle; margin-right: 6px;" /> **Lightning Performance**
 Built on **Vite 7** and **React 19**, Nexus Tools loads instantly. No layout shifts, no lag—just pure speed.
 
 ---
 
-## 🛡️ Enterprise-Grade Security
+## <img src="https://unpkg.com/lucide-static@0.344.0/icons/shield-check.svg" width="24" height="24" style="vertical-align: middle; margin-right: 8px;" /> Enterprise-Grade Security
 
 We take security seriously. Nexus Tools recently underwent a comprehensive security audit.
 
@@ -58,7 +58,7 @@ We take security seriously. Nexus Tools recently underwent a comprehensive secur
 
 ---
 
-## 🏗 Tech Stack
+## <img src="https://unpkg.com/lucide-static@0.344.0/icons/layers.svg" width="24" height="24" style="vertical-align: middle; margin-right: 8px;" /> Tech Stack
 
 | Component | Technology | Description |
 | :--- | :--- | :--- |
@@ -71,7 +71,7 @@ We take security seriously. Nexus Tools recently underwent a comprehensive secur
 
 ---
 
-## 💻 Installation
+## <img src="https://unpkg.com/lucide-static@0.344.0/icons/terminal.svg" width="24" height="24" style="vertical-align: middle; margin-right: 8px;" /> Installation
 
 1.  **Clone the repository**
     ```bash
@@ -103,5 +103,5 @@ We take security seriously. Nexus Tools recently underwent a comprehensive secur
 ---
 
 <div align="center">
-  <p>Built with ❤️ by Lorith AI</p>
+  <p>Built with <img src="https://unpkg.com/lucide-static@0.344.0/icons/heart.svg" width="16" height="16" style="vertical-align: middle;" /> by Lorith AI</p>
 </div>
