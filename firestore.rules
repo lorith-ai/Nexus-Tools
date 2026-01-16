@@ -1,0 +1,37 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Helper functions
+    function isValidTool() {
+      let tool = request.resource.data;
+      return tool.keys().hasAll(['name', 'link', 'category']) 
+        && tool.name is string && tool.name.size() > 0 && tool.name.size() < 100
+        && tool.link is string && tool.link.size() < 500
+        // Optional fields check or loose schema
+        && (tool.get('cost', '') is string || tool.get('cost', 0) is number);
+    }
+
+    match /artifacts/{appId}/users/{userId}/tools/{toolId} {
+      allow read, delete: if request.auth != null && request.auth.uid == userId;
+      allow create: if request.auth != null && request.auth.uid == userId 
+                    && isValidTool()
+                    && request.resource.data.dateAdded == request.time.toMillis(); // Or loosely allow timestamps
+      allow update: if request.auth != null && request.auth.uid == userId 
+                    && isValidTool();
+    }
+    
+    match /artifacts/{appId}/users/{userId}/{document=**} {
+      // Default fallback for other collections in user path
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    match /artifacts/{appId}/shared_stacks/{document=**} {
+      allow read: if true;
+      allow create: if request.auth != null 
+                    && request.resource.data.authorId == request.auth.uid
+                    && request.resource.data.keys().hasAll(['title', 'tools', 'authorId'])
+                    && request.resource.data.title is string && request.resource.data.title.size() < 100;
+      allow update, delete: if request.auth != null && request.resource.data.authorId == request.auth.uid;
+    }
+  }
+}
